@@ -1,13 +1,22 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonteEscrita: 'Cedarville Cursive', cursive;
+    --fonteTitulo: 'Orbitron', sans-serif;
+}
+
 html, body{
     background-color: grey;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -18,6 +27,8 @@ header{
 
 header h1{
     padding-top: 50px;
+    font-family: var(--fonteTitulo);
+    font-size: 3em;
     font-variant: small-caps; /*serve pra deixar maiusculo e também tem o text-transform*/
 }
 
@@ -36,6 +47,9 @@ a:hover{
 }
 
 section{
+    font-family: var(--fonteEscrita);
+    font-size: 4vw;
+    font-weight: bold;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -54,7 +68,8 @@ section.imagem{
 
 section.imagem p{
     background-color: rgba(0, 0, 0, 0.5);
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
 }
 
 
